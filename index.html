@@ -34,14 +34,20 @@
             list-style: none;
             margin: 0 23px;
         }
-
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(153,153, 226);
+        }
         .left {
             font-size: 1.5rem;
         }
         .firstSection{
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            align-items: center;
         }
         .firstSection > div{
             width:30%;
@@ -57,7 +63,10 @@
                align-items: center;
         }
         .purple{
-            color: rgb(152, 75, 224);
+            color: rgb(170, 107, 228);
+        }
+        #element{
+            color: rgb(170, 107, 228);
         }
         body {
             background-color: rgb(16, 2, 39);
@@ -73,10 +82,10 @@
             <div class="left">Balaji's Portfolio </div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Resume</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -85,13 +94,21 @@
         <section class="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Balaji</span>
-                <div>I am a passionate <div>Web Developer</div></div>
+                <div>I am a passionate </div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="bggg.jpg" alt="">
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Data Scientist'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
