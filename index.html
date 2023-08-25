@@ -136,7 +136,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="javascript: scrolltoId()">About</a></li>
                     <li><a href="124003413_BABU_BALAJI_V.pdf">Resume</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="javascript: scrolltoId()">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -173,7 +173,10 @@
                 <h3>Balaji's Developer Portfolio</h3>
             </div>
             <div class="footer-second">
-                
+                <div id="contact">
+                <h6>Gmail:</h6>
+                <h4>babubalaji877841@gmail.com</h4>
+            </div>
             </div>
             <div class="footer-third">
                 
@@ -195,6 +198,10 @@
         });
       function scrolltoId() {
       var access = document.getElementById('about');
+      access.scrollIntoView({ behavior: 'smooth' }, true);
+    }
+    function scrolltoId() {
+      var access = document.getElementById('contact');
       access.scrollIntoView({ behavior: 'smooth' }, true);
     }   
     var section = document.getElementById('about');
